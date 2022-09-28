@@ -5,17 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/0c0c9819d6.js" crossorigin="anonymous"></script>
     <title>Kinh Giao Ban - Gia Đình Thánh Tâm</title>
-    <style>
-        html {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-    </style>
+    <link rel="icon" href="sacred-heart.png" type="image/x-icon">
 </head>
 
 <body>
     <div id="wrap">
-        <h1>KINH GIAO BAN THÁNH TÂM</h1>
+        <div id="welcome">
+            <div class="title">
+                <h1>Kinh Giao Ban</h1>
+                <h3>Gia Đình Thánh Tâm</h3>
+            </div>
+
+            <div class=" option subject-option">
+                <p>Đối tượng:</p>
+
+                <input type="radio" name="subject" id="father" value="father" onclick="nextOption()">
+                <label for="father">Người cha</label>
+    
+                <input type="radio" name="subject" id="mother" value="mother" onclick="nextOption()">
+                <label for="mother">Người mẹ</label>
+    
+                <input type="radio" name="subject" id="child" value="child" onclick="nextOption()">
+                <label for="child">Người con</label>
+            </div>
+
+            <div class="option sant-name-option">
+                <p>Tên thánh:</p>
+
+                <input type="radio" name="sant-name" id="gioan" value="gioan" onclick="showButton()">
+                <label for="gioan">Gioan</label>
+            
+                <input type="radio" name="sant-name" id="giuse" value="giuse" onclick="showButton()">
+                <label for="giuse">Giuse</label>
+            
+
+                <input type="radio" name="sant-name" id="anton" value="anton" onclick="showButton()">
+                <label for="anton">Antôn</label>
+            
+                <input type="radio" name="sant-name" id="maria" value="maria" onclick="showButton()">
+                <label for="maria">Maria</label>
+            
+                <input type="radio" name="sant-name" id="terexa" value="terexa" onclick="showButton()">
+                <label for="terexa">Têrêxa</label>
+            
+                <input type="radio" name="sant-name" id="matta" value="matta" onclick="showButton()">
+                <label for="matta">Matta</label>
+            </div>
+
+            <button id="start-btn" onclick="switchContent()">Bắt đầu</button>
+        </div>
+
         <div id="content">
             <section>
                 <h3>Kinh Đức Chúa Thánh Thần</h3>
@@ -94,7 +139,6 @@
             <section>
                 <h3>Kinh Tận hiến gia đình </br>cho Thánh Tâm Chúa Giêsu</h3>
                 <div id="father-ded">
-                    <h4>Người cha</h4>
                     <p>Lạy rất Thánh Trái Tim Đức Chúa Giêsu, con là <span id="father-sant">*sant-name*</span> gia trưởng, con hoàn toàn tin tưởng tận hiến con cho Ngài vì tình yêu. Trong ngày lê cưới của con, Ngài đã hứa sẽ hiện diện trong tình yêu vợ chồng chúng con, để giúp chúng con thực thi ơn gọi cao quý này. Lạy Chúa Giêsu, qua việc tận hiến này, con muốn lập lại, với tất cả nhận thức và tự do, những cam kết hôn nhân trước mặt vợ con và sự hiện diện của Ngài.</p>
                     <p>Lạy Chúa Giêsu, con hết sức mong ước Ngài hãy làm chủ hộ gia đình con và hãy ngự trị trong trái tim của mỗi thành viên trong gia đình, xin hãy đổ thần khí tình yêu Ngài trong con, để con sống giữa gia đình con như người phục vụ, như Lời Ngài đã phán: Ta không đến để được phục vụ, nhưng để phục vụ.</p>
                     <p>Trong tinh thần phục vụ này. Lạy Chúa Giêsu, xin hãy cho con nên tốt lành và cương nghị, hoàn toàn như thánh Giuse dưỡng phụ Ngài, để con luôn hăng say chu toàn đầy đủ trách nhiệm làm chồng và làm cha của con, xin giúp con luôn sẵn sàng lắng nghe các lời gợi ý tốt lành của các bậc thầy đích thực.</p>
@@ -102,7 +146,6 @@
                 </div>
 
                 <div id="mother-ded">
-                    <h4>Người mẹ</h4>
                     <p>Lạy rất Thánh Trái Tim Đức Chúa Giêsu, con là <span id="mother-sant">*sant-name*</span> mẹ gia đình, con hoàn toàn tin tưởng tận hiến con cho Ngài với tình yêu mến. Lạy Chúa Giêsu, Ngài đã có một người Mẹ đã từng yêu thương Ngài khi chu toàn đầy đủ trách nhiệm làm mẹ, bởi vì từ đỉnh cao thập giá, Ngài đã khấn ban Mẹ Ngài làm Mẹ chúng con, nhờ lời cầu bầu hiền mẫu của Mẹ, xin thực hiện trong trái tim người mẹ của con sự tận hiến này.</p>
                     <p>Ước gì Đức Maria ảnh hưởng trên cuộc đời con, để trong mọi sự con luôn luôn phó thác theo thánh ý Chúa Cha.</p>
                     <p>Ước gì Đức Maria, Thần Khí tình yêu lớn lên trong con, và dạy con ngày càng yêu mến Ngài hơn. Lạy Chúa Giêsu đang hiện diện trong trái tim chồng con và con cái con.</p>
@@ -113,7 +156,6 @@
                 </div>
 
                 <div id="child-ded">
-                    <h4>Người con</h4>
                     <p>Lạy rất Thánh Trái Tim Đức Chúa Giêsu, con là <span id="child-sant">*sant-name*</span>, hôm nay con tận hiện con như con cái gia đình.</p>
                     <p>Lạy Chúa Giêsu, Ngài đã hỏi trong Phúc âm: Ai là mẹ Ta, ai là anh Ta và đã trả lời khi nói răng, gia đình đích thực của Ta là những ai làm theo ý Cha Ta trên trời.</p>
                     <p>Qua việc tận hiến này, nhờ lời cầu bầu của Đức Maria và Thánh Giuse, Cha Mẹ Ngài, xin giúp con luôn làm theo ý Cha Ngài.</p>
